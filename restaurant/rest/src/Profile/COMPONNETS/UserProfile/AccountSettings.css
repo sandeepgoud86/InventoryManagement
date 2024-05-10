@@ -1,0 +1,144 @@
+/*.accountsettings{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.accountsettings h1{
+    padding: 10px 20px;
+}
+
+
+.accountsettings .form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.accountsettings .form .form-group{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 10px;
+}
+
+.accountsettings .form .form-group label{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.accountsettings .form .form-group input{
+    padding: 10px 20px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    outline: none;
+}
+
+.accountsettings .form .form-group input:focus{
+    border: 1px solid var(--col1);
+}
+
+
+
+@media (max-width: 800px){
+    .accountsettings .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .accountsettings .form .form-group{
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        margin: 10px;
+    }
+    .accountsettings h1{
+        font-size: 20px;
+    }
+    .accountsettings .form .form-group label{
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+}  */
+
+/* AccountSettings.css */
+
+/* Add styles for the container div */
+.account-container {
+  max-width: 800px;
+  margin: 20px auto; /* Center the container */
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Add styles for the h1 element */
+h1 {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Add styles for the profile details */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+/* Add styles for the input fields */
+.profile-details input {
+  padding: 10px;
+  width: calc(100% - 20px); /* Adjust input width to fit container */
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Add styles for the buttons */
+.profile-details button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+/* Style the Save Changes button */
+.profile-details .save-changes-button {
+  background-color: #4caf50;
+  margin-right: 10px;
+}
+
+/* Style the Edit button */
+.profile-details .edit-button {
+  background-color : #3498db; 
+}
+
+/* Add styles for responsive layout */
+@media (max-width: 800px) {
+  .profile-details {
+    align-items: center;
+  }
+
+  .profile-details input {
+    width: 100%;
+  }
+}
